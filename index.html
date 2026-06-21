@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bega Draft Festival - Acasa</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Spațiere pentru a nu ascunde conținutul sub bara de navigare fixă */
+        body {
+            padding-top: 56px;
+        }
+        /* Ajustăm înălțimea caruselului în faza de proiectare pentru a nu ocupa tot ecranul */
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover; /* Redimensionare estetică a imaginilor */
+            background-color: #cccccc; /* Fundal gri pentru faza monocromă */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">🎵 Bega Draft</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFestival" aria-controls="navbarFestival" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarFestival">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Acasă</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="program.html">Program & Componente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact & Suport</a>
+                    </li>
+                </ul>
+                
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Caută în site..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Caută</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container my-4 text-center">
+        <h1 class="display-4 fw-bold">Bega Draft Festival 2026</h1>
+        <p class="lead text-muted">Ediția de Vară - Timișoara</p>
+    </header>
+
+    <section class="container mb-5">
+        <div id="caruselFestival" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#caruselFestival" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#caruselFestival" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#caruselFestival" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <div class="carousel-inner rounded shadow-sm">
+                <div class="carousel-item active">
+                    <img src="imagini\concert.jpeg" class="d-block w-100" alt="Scena Principală Bega Draft">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Concerte pe malul Begăi</h5>
+                        <p>Bucură-te de atmosfera de la scenele Bega Draft.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagini\food.jpeg" class="d-block w-100" alt="Zona de Food & Drinks">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Craft Beer & Food Court</h5>
+                        <p>Încarcă-ți bateriile în zona de Food & Drink.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagini\workshop.jpeg" class="d-block w-100" alt="Activități culturale">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Zone de relaxare și cultură</h5>
+                        <p>Simte-te bine alături de cei dragi la ateliere propuse de noi.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#caruselFestival" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Precedent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#caruselFestival" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Următor</span>
+            </button>
+        </div>
+    </section>
+
+    <a href="#" class="btn-up" title="Mergi sus"><i class="bi bi-arrow-up fs-5"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
